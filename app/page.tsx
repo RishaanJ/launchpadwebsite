@@ -14,29 +14,6 @@ import {
 import { TopBar, Footer, SectionLabel, ArrowSmall } from "./_components/Chrome";
 import { PARTNERS, PARTNER_SLOT_COUNT } from "@/lib/partners";
 
-const VERBS: { n: string; word: string; body: string }[] = [
-  {
-    n: "01",
-    word: "Build",
-    body: "Real products, not class projects. The work that turns an idea into something people can actually use.",
-  },
-  {
-    n: "02",
-    word: "Ship",
-    body: "Done beats perfect. Every cycle ends with something live, in front of real users, on a deadline that doesn't move.",
-  },
-  {
-    n: "03",
-    word: "Sell",
-    body: "Distribution is the product. Marketing, monetization, and putting the thing where its audience already is.",
-  },
-  {
-    n: "04",
-    word: "Scale",
-    body: "From a dorm-room product to a real org. Hire your friends. Raise the bar. Treat the work like it matters because it does.",
-  },
-];
-
 const TRACKS: { n: string; name: string; body: string }[] = [
   { n: "01", name: "Digital", body: "Apps, websites, tools. Real users by demo day." },
   { n: "02", name: "Physical", body: "Hardware, wearables, anything you can hold." },
@@ -263,85 +240,59 @@ function AboutSection() {
   return (
     <section id="about" className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="01" label="What we are" />
+        <SectionLabel n="01" label="About Launchpad" />
 
-        <div className="mt-8 grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-[1.05fr_1fr] lg:items-start">
-          <div>
-            <h2
-              className="max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
-              style={{
-                fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)",
-                textWrap: "balance",
-              }}
-            >
-              We teach the whole loop.
-            </h2>
-            <p className="mt-7 max-w-[56ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">
-              Most high school programs pick a side. Engineering through hackathons. Business through pitch contests.{" "}
-              <span className="font-medium text-ink">Launchpad teaches all four.</span>{" "}
-              The whole motion from idea to org — real users at the end, real revenue if it works.
-            </p>
-          </div>
+        <h2
+          className="mt-8 max-w-[20ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
+          style={{
+            fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)",
+            textWrap: "balance",
+          }}
+        >
+          We&rsquo;re building the next generation of product builders.
+        </h2>
 
-          <div className="lg:pt-2">
-            <p
-              className="font-sans font-medium leading-[1.1] tracking-[-0.025em] text-ink"
-              style={{
-                fontSize: "clamp(1.25rem, 1.9vw, 1.75rem)",
-                textWrap: "balance",
-              }}
-            >
-              Four words. <span className="text-ink-soft">Run in order.</span> Until something you built has a real audience and a real bank account.
-            </p>
-          </div>
-        </div>
+        <p className="mt-8 max-w-[60ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">
+          Launchpad is the high school product development network where students
+          learn how to build, ship, sell, and scale products that create
+          real-world impact.
+        </p>
 
-        <div className="mt-14 grid grid-cols-1 gap-0 border-t border-rule sm:grid-cols-2 sm:border-l">
-          {VERBS.map((v, i) => (
-            <article
-              key={v.word}
-              className={`group relative flex flex-col gap-4 border-b border-rule p-7 transition-colors hover:bg-paper-2 sm:p-10 ${
-                i % 2 === 0 ? "sm:border-r" : ""
-              }`}
-            >
-              <div className="flex items-baseline justify-between">
-                <span className="font-mono text-[12px] uppercase tracking-[0.24em] text-ink-mute">
-                  {v.n} / 04
-                </span>
-                <span className="font-mono text-[12px] uppercase tracking-[0.24em] text-ink-mute">
-                  {i === 0
-                    ? "Make"
-                    : i === 1
-                    ? "Launch"
-                    : i === 2
-                    ? "Grow"
-                    : "Compound"}
-                </span>
-              </div>
-              <h3
-                className="font-sans font-bold leading-none tracking-[-0.04em] text-ink"
-                style={{ fontSize: "clamp(2.5rem, 5vw, 4.25rem)" }}
-              >
-                {v.word}
-                <span className="text-accent">.</span>
-              </h3>
-              <p className="max-w-[44ch] text-[15.5px] leading-relaxed text-ink-soft">
-                {v.body}
-              </p>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-14 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-[52ch] font-sans text-[15px] leading-relaxed text-ink-soft">
-            Beyond the network, we&rsquo;re building a global initiative for teen
-            founders who don&rsquo;t have one nearby.
+        <div className="mt-14 max-w-[42ch] space-y-3">
+          <p
+            className="font-sans font-medium leading-[1.18] tracking-[-0.02em] text-ink-soft"
+            style={{ fontSize: "clamp(1.25rem, 1.9vw, 1.75rem)", textWrap: "balance" }}
+          >
+            Most students are taught how to code.
           </p>
+          <p
+            className="font-sans font-medium leading-[1.18] tracking-[-0.02em] text-ink-soft"
+            style={{ fontSize: "clamp(1.25rem, 1.9vw, 1.75rem)", textWrap: "balance" }}
+          >
+            Some are taught how to pitch.
+          </p>
+          <p
+            className="font-sans font-semibold leading-[1.18] tracking-[-0.02em] text-ink"
+            style={{ fontSize: "clamp(1.25rem, 1.9vw, 1.75rem)", textWrap: "balance" }}
+          >
+            Very few are taught how to turn an idea into something people
+            actually use.
+          </p>
+        </div>
+
+        <p
+          className="mt-10 font-sans font-bold leading-[1.05] tracking-[-0.03em] text-ink"
+          style={{ fontSize: "clamp(1.625rem, 2.6vw, 2.5rem)", textWrap: "balance" }}
+        >
+          That&rsquo;s where Launchpad begins.
+        </p>
+
+        <div className="mt-12">
           <Link
-            href="/initiative"
+            href="/about"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 font-sans text-[15px] font-medium text-paper transition-transform duration-300 ease-out hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
           >
-            Our global initiative
+            Read our full story
             <ArrowSmall />
           </Link>
         </div>
