@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useInView, useReducedMotion } from "motion/react";
 import { useRef, useState } from "react";
+import { InfinityGlyph } from "./Motion";
 
 export type TimelineItem = {
   phase: string;
@@ -98,7 +99,12 @@ function TimelineRow({
           transition={{ duration: 0.3 }}
           className="font-mono text-[11px] font-medium uppercase tracking-[0.22em]"
         >
-          {item.phase} · {item.year}
+          {item.phase} ·{" "}
+          {item.year === "∞" ? (
+            <InfinityGlyph size="0.95em" className="ml-0.5" />
+          ) : (
+            item.year
+          )}
         </motion.span>
       </div>
 

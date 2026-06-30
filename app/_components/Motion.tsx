@@ -407,6 +407,39 @@ export function Annotation({
 }
 
 /* -------------------------------------------------------------------------- */
+/* InfinityGlyph — inline SVG so the lemniscate renders identically across    */
+/* fonts. Inherits stroke color via currentColor.                             */
+/* -------------------------------------------------------------------------- */
+
+export function InfinityGlyph({
+  className = "",
+  size,
+  strokeWidth = 2,
+}: {
+  className?: string;
+  size?: number | string;
+  strokeWidth?: number;
+}) {
+  return (
+    <svg
+      role="img"
+      aria-label="Infinity"
+      viewBox="0 0 24 12"
+      width={size ?? "1.6em"}
+      height={size ? Math.round((typeof size === "number" ? size : 0) / 2) || size : "0.8em"}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`inline-block align-[-0.05em] ${className}`}
+    >
+      <path d="M12 6c-1.7-2.2-3.3-3.3-5-3.3a3.3 3.3 0 1 0 0 6.6c1.7 0 3.3-1.1 5-3.3Zm0 0c1.7 2.2 3.3 3.3 5 3.3a3.3 3.3 0 0 0 0-6.6c-1.7 0-3.3 1.1-5 3.3Z" />
+    </svg>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
 /* PhotoSlot — real <img> when src provided, dashed placeholder otherwise     */
 /* -------------------------------------------------------------------------- */
 

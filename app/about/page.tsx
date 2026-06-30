@@ -15,6 +15,7 @@ import {
   WordReveal,
   PhotoSlot,
   Annotation,
+  InfinityGlyph,
 } from "../_components/Motion";
 import { InteractiveTimeline } from "../_components/Timeline";
 const FADE_LINES = [
@@ -730,7 +731,11 @@ function FirstCohort() {
                 className="font-sans font-bold leading-none tracking-[-0.03em]"
                 style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
               >
-                {stat.value}
+                {stat.value === "∞" ? (
+                  <InfinityGlyph size="1em" strokeWidth={2.4} />
+                ) : (
+                  stat.value
+                )}
               </span>
               <span className="font-mono text-[10.5px] uppercase tracking-[0.22em] text-paper/55">
                 {stat.label}
