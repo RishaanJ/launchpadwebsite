@@ -5,7 +5,6 @@ export const NAV: { label: string; href: string }[] = [
   { label: "About", href: "/#about" },
   { label: "Partners", href: "/#partners" },
   { label: "Sponsors", href: "/#sponsors" },
-  { label: "Initiative", href: "/initiative" },
 ];
 
 type ArrowSmallProps = {

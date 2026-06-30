@@ -16,8 +16,7 @@ import {
   PhotoSlot,
   Annotation,
 } from "../_components/Motion";
-import { PixelCluster } from "../_components/PixelCluster";
-
+import { InteractiveTimeline } from "../_components/Timeline";
 const FADE_LINES = [
   "The project gets pushed to GitHub.",
   "The presentation ends.",
@@ -128,13 +127,48 @@ const PROGRAMS: {
   },
 ];
 
-const LONG_TERM = [
-  "A nationwide chapter network",
-  "Annual Shipathons",
-  "Global initiatives that create lasting impact",
-  "Open-source product development curriculum",
-  "Thousands of student-built products",
-  "A generation of builders creating companies, nonprofits, open-source software, and technology that improves people's lives",
+const LONG_TERM: {
+  phase: string;
+  year: string;
+  title: string;
+  body: string;
+}[] = [
+  {
+    phase: "Now",
+    year: "FALL 2026",
+    title: "Roots in the Bay Area",
+    body: "AHS chapter plus the founding cohort, monthly meetings, founder talks, the first chapter-led builds.",
+  },
+  {
+    phase: "Soon",
+    year: "SPRING 2027",
+    title: "Annual Shipathons",
+    body: "The first Bay Area Shipathon. Teams ship real products in 2 weeks, in front of working founders and operators. Hybrid Event",
+  },
+  {
+    phase: "Year 2",
+    year: "WINTER 2027",
+    title: "A nationwide chapter network",
+    body: "4+ chapters across the country, each running monthly meetings, founder sessions, and chapter-led events.",
+  },
+  {
+    phase: "Year 3",
+    year: "SPRING 2028",
+    title: "Open-source curriculum",
+    body: "The full Launchpad playbook published freely. Educators, clubs, and partner orgs adopt and translate it.",
+  },
+  {
+    phase: "Year 3",
+    year: "SUMMER 2028",
+    title: "Launchpad Atlas",
+    body: "Launchpad Atlas operating in multiple regions outside the US, putting builder tools in underserved hands.",
+  },
+  {
+    phase: "Long-term",
+    year: "∞",
+    title: "A generation of builders",
+    body: "Launchpad alumni founding companies, nonprofits, open-source projects, and technology that improves people's lives.",
+  },
 ];
 
 export default function AboutPage() {
@@ -164,18 +198,7 @@ export default function AboutPage() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-rule-soft bg-paper">
-      {/* One atmospheric decoration — far from the column, low presence */}
-      <PixelCluster
-        cols={9}
-        rows={6}
-        density={0.5}
-        cell={9}
-        gap={2}
-        seed={47}
-        className="pointer-events-none absolute right-[3%] top-[18%] hidden h-auto w-[130px] text-ink-mute lg:block"
-      />
-
+    <section className="relative border-b border-rule-soft bg-paper">
       <div className="relative mx-auto w-full max-w-[860px] px-5 py-24 sm:px-8 sm:py-32 lg:py-40">
         <Link
           href="/"
@@ -869,24 +892,7 @@ function LongTerm() {
           </p>
         </Reveal>
 
-        <Stagger className="mt-12 divide-y divide-rule border-y border-rule">
-          {LONG_TERM.map((item, i) => (
-            <li
-              key={item}
-              className="grid list-none grid-cols-[44px_1fr] items-baseline gap-4 py-5 sm:py-6"
-            >
-              <span className="font-mono text-[12px] uppercase tracking-[0.22em] text-ink-mute">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <p
-                className="font-sans font-medium leading-snug tracking-[-0.015em] text-ink"
-                style={{ fontSize: "clamp(1.05rem, 1.4vw, 1.25rem)" }}
-              >
-                {item}
-              </p>
-            </li>
-          ))}
-        </Stagger>
+        <InteractiveTimeline items={LONG_TERM} />
       </div>
     </section>
   );
