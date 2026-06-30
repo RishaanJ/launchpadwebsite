@@ -75,8 +75,8 @@ function Hero({ total }: { total: number }) {
           }}
         >
           {total === 0
-            ? "Founding partner cohort opens here."
-            : "The people backing Launchpad."}
+            ? <>Founding partner cohort opens here<span className="text-accent">.</span></>
+            : <>The people backing Launchpad<span className="text-accent">.</span></>}
         </h1>
 
         <p
@@ -122,7 +122,7 @@ function EmptyState() {
             textWrap: "balance",
           }}
         >
-          Pick a seat. We&rsquo;ll put your name on it.
+          Pick a seat. We&rsquo;ll put your name on it<span className="text-accent">.</span>
         </h2>
 
         <ul className="mt-14 grid grid-cols-1 gap-px overflow-hidden border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-4">
@@ -290,7 +290,7 @@ function CtaBlock() {
                 textWrap: "balance",
               }}
             >
-              Put your name next to the work.
+              Put your name next to the work<span className="text-accent">.</span>
             </h2>
             <p className="mt-6 max-w-[56ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">
               Tier overview, benefits, and the contact path all live on the home

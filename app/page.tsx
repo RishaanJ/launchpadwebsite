@@ -238,8 +238,13 @@ function Hero() {
 
 function AboutSection() {
   return (
-    <section id="about" className="relative border-t border-rule bg-paper">
-      <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
+    <section
+      id="about"
+      className="relative overflow-hidden border-t border-rule bg-paper"
+    >
+      <TiltedWeb className="absolute right-[-6%] top-[10%] hidden h-auto w-[950px] text-ink-mute lg:block xl:right-[-2%] xl:top-[8%] xl:w-[820px]"/>
+
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <SectionLabel n="01" label="About Launchpad" />
 
         <h2
@@ -249,7 +254,7 @@ function AboutSection() {
             textWrap: "balance",
           }}
         >
-          We&rsquo;re building the next generation of product builders.
+          We&rsquo;re building the next generation of product builders<span className="text-accent">.</span>
         </h2>
 
         <p className="mt-8 max-w-[60ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">
@@ -284,7 +289,7 @@ function AboutSection() {
           className="mt-10 font-sans font-bold leading-[1.05] tracking-[-0.03em] text-ink"
           style={{ fontSize: "clamp(1.625rem, 2.6vw, 2.5rem)", textWrap: "balance" }}
         >
-          That&rsquo;s where Launchpad begins.
+          That&rsquo;s where Launchpad begins<span className="text-accent">.</span>
         </p>
 
         <div className="mt-12">
@@ -298,6 +303,110 @@ function AboutSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+function TiltedWeb({ className = "" }: { className?: string }) {
+  const SPOKES = 10;
+  const RINGS = 6;
+  const CX = 200;
+  const CY = 200;
+  const MAX_R = 180;
+
+  const point = (ringIdx: number, spokeIdx: number) => {
+    const angle = (spokeIdx / SPOKES) * Math.PI * 2 - Math.PI / 2;
+    const r = ((ringIdx + 1) / RINGS) * MAX_R;
+    return {
+      x: CX + Math.cos(angle) * r,
+      y: CY + Math.sin(angle) * r,
+    };
+  };
+
+  const ringPolygon = (ringIdx: number) =>
+    Array.from({ length: SPOKES })
+      .map((_, i) => {
+        const p = point(ringIdx, i);
+        return `${p.x.toFixed(2)},${p.y.toFixed(2)}`;
+      })
+      .join(" ");
+
+  return (
+    <div
+      aria-hidden
+      className={`pointer-events-none ${className}`}
+      style={{ perspective: "1200px" }}
+    >
+      <div
+        style={{
+          transform: "rotateX(58deg) rotateZ(-24deg) rotateY(-12deg)",
+          transformOrigin: "center center",
+          transformStyle: "preserve-3d",
+        }}
+      >
+        <svg
+          viewBox="0 0 400 400"
+          className="block h-auto w-full"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+        >
+          <g strokeWidth={1}>
+            {Array.from({ length: SPOKES }).map((_, i) => {
+              const outer = point(RINGS - 1, i);
+              return (
+                <line
+                  key={`spoke-${i}`}
+                  x1={CX}
+                  y1={CY}
+                  x2={outer.x}
+                  y2={outer.y}
+                />
+              );
+            })}
+            {Array.from({ length: RINGS }).map((_, r) => (
+              <polygon
+                key={`ring-${r}`}
+                points={ringPolygon(r)}
+                strokeOpacity={0.55 + (r / RINGS) * 0.35}
+              />
+            ))}
+          </g>
+          <g fill="currentColor" stroke="none">
+            {Array.from({ length: RINGS }).flatMap((_, r) =>
+              Array.from({ length: SPOKES }).map((_, i) => {
+                const p = point(r, i);
+                const isOuter = r === RINGS - 1;
+                return (
+                  <circle
+                    key={`node-${r}-${i}`}
+                    cx={p.x}
+                    cy={p.y}
+                    r={isOuter ? 2.6 : 2}
+                    opacity={0.5 + (r / RINGS) * 0.5}
+                  />
+                );
+              })
+            )}
+            <circle
+              cx={CX}
+              cy={CY}
+              r={6}
+              className="text-accent"
+              fill="currentColor"
+            />
+            <circle
+              cx={CX}
+              cy={CY}
+              r={11}
+              fill="none"
+              stroke="currentColor"
+              strokeOpacity={0.4}
+              className="text-accent"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
   );
 }
 
@@ -434,7 +543,7 @@ function ChaptershipSection() {
           className="mt-8 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
           style={{ fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)", textWrap: "balance" }}
         >
-          Start one at your school.
+          Start one at your school<span className="text-accent">.</span>
         </h2>
 
         <p className="mt-6 max-w-[52ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">
@@ -566,7 +675,7 @@ function PartnersSection() {
             textWrap: "balance",
           }}
         >
-          {isEmpty ? "First six seats are open." : "Currently backed by."}
+          {isEmpty ? "First six seats are open" : "Currently backed by"}<span className="text-accent">.</span>
         </h2>
 
         <p className="mt-6 max-w-[58ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">
@@ -682,7 +791,7 @@ function SponsorsSection() {
           className="mt-8 max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
           style={{ fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)", textWrap: "balance" }}
         >
-          Sponsor the next generation.
+          Sponsor the next generation<span className="text-accent">.</span>
         </h2>
 
         <p className="mt-6 max-w-[62ch] text-[17px] leading-relaxed text-ink-soft sm:text-[18px]">

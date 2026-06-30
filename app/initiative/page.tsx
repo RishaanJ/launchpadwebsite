@@ -85,7 +85,7 @@ function Hero() {
             textWrap: "balance",
           }}
         >
-          Most teen builders don&rsquo;t have a Launchpad nearby.
+          Most teen builders don&rsquo;t have a Launchpad nearby<span className="text-accent">.</span>
         </h1>
 
         <p
@@ -121,7 +121,7 @@ function Why() {
             className="max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
             style={{ fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)", textWrap: "balance" }}
           >
-            The infrastructure isn&rsquo;t evenly distributed.
+            The infrastructure isn&rsquo;t evenly distributed<span className="text-accent">.</span>
           </h2>
 
           <div>
@@ -153,7 +153,7 @@ function Pillars() {
           className="mt-8 max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
           style={{ fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)", textWrap: "balance" }}
         >
-          Four pieces. Each useful on its own.
+          Four pieces. Each useful on its own<span className="text-accent">.</span>
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-0 border-t border-rule sm:grid-cols-2 sm:border-l">
@@ -194,7 +194,7 @@ function Roadmap() {
           className="mt-8 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
           style={{ fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)", textWrap: "balance" }}
         >
-          What&rsquo;s next, in order.
+          What&rsquo;s next, in order<span className="text-accent">.</span>
         </h2>
 
         <ol className="mt-12 divide-y divide-rule border-y border-rule">
@@ -230,7 +230,7 @@ function Cta() {
           className="mt-8 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
           style={{ fontSize: "clamp(2.25rem, 5.5vw, 4.5rem)", textWrap: "balance" }}
         >
-          Three ways in.
+          Three ways in<span className="text-accent">.</span>
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-0 border-t border-rule lg:grid-cols-3 lg:border-l">

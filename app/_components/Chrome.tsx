@@ -8,20 +8,41 @@ export const NAV: { label: string; href: string }[] = [
   { label: "Initiative", href: "/initiative" },
 ];
 
-export function ArrowSmall({ className = "" }: { className?: string }) {
+type ArrowSmallProps = {
+  className?: string;
+  direction?: "left" | "right";
+};
+
+export function ArrowSmall({
+  className = "",
+  direction = "right",
+}: ArrowSmallProps) {
   return (
     <svg
       aria-hidden
       viewBox="0 0 16 16"
-      className={`h-3.5 w-3.5 shrink-0 transition-transform duration-300 ease-out group-hover:translate-x-0.5 ${className}`}
+      className={`h-3.5 w-3.5 shrink-0 transition-transform duration-300 ease-out ${
+        direction === "right"
+          ? "group-hover:translate-x-0.5"
+          : "group-hover:-translate-x-0.5"
+      } ${className}`}
       fill="none"
       stroke="currentColor"
       strokeWidth={1.6}
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M3 8h10" />
-      <path d="M9 4l4 4-4 4" />
+      {direction === "right" ? (
+        <>
+          <path d="M3 8h10" />
+          <path d="M9 4l4 4-4 4" />
+        </>
+      ) : (
+        <>
+          <path d="M13 8H3" />
+          <path d="M7 4 3 8l4 4" />
+        </>
+      )}
     </svg>
   );
 }
@@ -44,14 +65,14 @@ export function TopBar() {
           <Image
             src="/Icon.png"
             alt="Launchpad"
-            width={28}
-            height={28}
+            width={45}
+            height={45}
             priority
             style={{
               width: "auto",
               height: "auto",
               maxWidth: "100%",
-              maxHeight: 28,
+              maxHeight: 45,
             }}
           />
         </Link>
