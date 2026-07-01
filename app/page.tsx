@@ -217,15 +217,16 @@ function Hero() {
               href="#apply"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 font-sans text-[15px] font-medium text-paper transition-transform duration-300 ease-out hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
             >
-              Apply for Fall &rsquo;26
-              <ArrowSmall />
+              Application Coming Soon...
+              { /* <ArrowSmall /> */}
             </a>
             <a
-              href="#about"
+              href="https://forms.gle/Wju5ADiFWzUvnPKz7"
+              target="_blank"
               className="group inline-flex items-center justify-center gap-2 font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
             >
               <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
-                See what we&rsquo;re building
+                Sign up for the Waitlist
               </span>
               <ArrowSmall className="text-ink-mute transition-colors group-hover:text-ink" />
             </a>
@@ -861,17 +862,17 @@ function SponsorsSection() {
             href="#sponsor-deck"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 font-sans text-[15px] font-medium text-paper transition-transform duration-300 ease-out hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
           >
-            Get the sponsor deck
-            <ArrowSmall />
+            Sponsor Deck Coming Soon...
+            {/* <ArrowSmall /> */}
           </a>
           <a
             href="mailto:hello@launchpad.example"
             className="group inline-flex items-center gap-2 font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
           >
-            <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
+            {/* <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
               hello@launchpad.example
-            </span>
-            <ArrowSmall className="text-ink-mute transition-colors group-hover:text-ink" />
+            </span> 
+            <ArrowSmall className="text-ink-mute transition-colors group-hover:text-ink" />*/}
           </a>
         </div>
       </div>
