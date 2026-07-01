@@ -68,7 +68,7 @@ function Hero() {
     <section className="relative overflow-hidden border-b border-rule-soft bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32 lg:py-40">
         <div className="flex flex-col gap-4">
-          <SectionLabel n="00" label="Global initiative" />
+          <SectionLabel label="Global initiative" />
           <Link
             href="/"
             className="group inline-flex items-center gap-1.5 self-start font-mono text-[11px] uppercase tracking-[0.22em] text-ink-mute transition-colors hover:text-ink"
