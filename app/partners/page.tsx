@@ -12,12 +12,14 @@ import {
   TIER_AMOUNTS,
   type PartnerTier,
 } from "@/lib/partners";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Partners — Launchpad",
+export const metadata: Metadata = buildMetadata({
+  title: "Partners",
   description:
-    "Companies and individuals backing Launchpad. Title, Operator, Builder, and Friend tiers — the people putting weight behind the next generation of high school builders.",
-};
+    "The founding partner cohort backing Launchpad — Title, Operator, Builder, and Friend tiers. Companies and individuals putting weight behind the next generation of high school builders.",
+  path: "/partners",
+});
 
 export default function PartnersPage() {
   const year = new Date().getFullYear();

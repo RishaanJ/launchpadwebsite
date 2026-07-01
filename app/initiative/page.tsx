@@ -7,10 +7,11 @@ import {
   ArrowSmall,
 } from "../_components/Chrome";
 
+// Intentionally omitted from SEO / sitemap / robots — this route stays
+// reachable via direct link, but is not surfaced for crawling until launch.
 export const metadata: Metadata = {
   title: "Initiative — Launchpad",
-  description:
-    "Launchpad's global initiative — putting product-building tools and mentorship in the hands of teen founders who don't have a local network.",
+  robots: { index: false, follow: false },
 };
 
 const PILLARS = [

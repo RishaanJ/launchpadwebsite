@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Dithering } from "@paper-design/shaders-react";
 import { PixelCluster } from "./_components/PixelCluster";
 import { Highlighter } from "@/components/ui/highlighter"
+import { buildMetadata } from "@/lib/seo";
 import {
   HeroDitheringRoot,
   HeroDitheringContent,
@@ -84,6 +86,14 @@ const TIERS: {
     featured: true,
   },
 ];
+
+export const metadata: Metadata = buildMetadata({
+  // Home uses the full brand line as the browser-tab and social-card title.
+  title: "Launchpad — The High School Product Development Network",
+  description:
+    "The high school product development network. We teach students to build, ship, sell, and scale real products that reach real people — not class projects, not hackathon trophies.",
+  path: "/",
+});
 
 export default function Home() {
   const year = new Date().getFullYear();

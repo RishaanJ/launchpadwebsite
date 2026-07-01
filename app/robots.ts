@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://launchpad.example"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://buildlaunchpad.org"
 ).replace(/\/$/, "");
 
 export default function robots(): MetadataRoute.Robots {
@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/initiative"],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

@@ -18,6 +18,8 @@ import {
   InfinityGlyph,
 } from "../_components/Motion";
 import { InteractiveTimeline } from "../_components/Timeline";
+import { buildMetadata } from "@/lib/seo";
+
 const FADE_LINES = [
   "The project gets pushed to GitHub.",
   "The presentation ends.",
@@ -32,11 +34,12 @@ const TRUTH_LINES = [
   "It’s learning why people buy, share, recommend, or ignore what you create.",
 ];
 
-export const metadata: Metadata = {
-  title: "About Launchpad",
+export const metadata: Metadata = buildMetadata({
+  title: "Our Story",
   description:
-    "The high school product development network. We teach students to build, ship, sell, and scale products that reach real people.",
-};
+    "The Launchpad story — how the high school product development network started, our mission to teach the whole build → ship → sell → scale loop, and the long-term vision for a nationwide chapter network.",
+  path: "/about",
+});
 
 const COMPARISON: { traditional: string; launchpad: string }[] = [
   { traditional: "Learn to code", launchpad: "Build complete products" },
