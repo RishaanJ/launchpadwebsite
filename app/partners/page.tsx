@@ -57,7 +57,7 @@ function Hero({ total }: { total: number }) {
     <section className="relative overflow-hidden border-b border-rule-soft bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32 lg:py-40">
         <div className="flex flex-col gap-4">
-          <SectionLabel n="00" label="Partners" />
+          <SectionLabel label="Partners" />
           <Link
             href="/"
             className="group inline-flex items-center gap-1.5 self-start font-mono text-[11px] uppercase tracking-[0.22em] text-ink-mute transition-colors hover:text-ink"
@@ -113,7 +113,7 @@ function EmptyState() {
   return (
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="01" label="Tiers" />
+        <SectionLabel label="Tiers" />
 
         <h2
           className="mt-8 max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
@@ -175,7 +175,7 @@ function Roster({
   return (
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="01" label="Roster" />
+        <SectionLabel label="Roster" />
 
         <div className="mt-12 flex flex-col gap-20">
           {TIER_ORDER.map((tier, idx) => {
@@ -282,7 +282,7 @@ function CtaBlock() {
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <div className="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <SectionLabel n="02" label="Join" />
+            <SectionLabel label="Join" />
             <h2
               className="mt-6 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
               style={{

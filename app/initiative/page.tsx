@@ -114,7 +114,7 @@ function Why() {
   return (
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="01" label="Why" />
+        <SectionLabel label="Why" />
 
         <div className="mt-8 grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-[1.05fr_1fr] lg:items-start">
           <h2
@@ -147,7 +147,7 @@ function Pillars() {
   return (
     <section className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="02" label="What we ship" />
+        <SectionLabel label="What we ship" />
 
         <h2
           className="mt-8 max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
@@ -188,7 +188,7 @@ function Roadmap() {
   return (
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="03" label="Roadmap" />
+        <SectionLabel label="Roadmap" />
 
         <h2
           className="mt-8 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
@@ -224,7 +224,7 @@ function Cta() {
   return (
     <section className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="04" label="Get involved" />
+        <SectionLabel label="Get involved" />
 
         <h2
           className="mt-8 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
