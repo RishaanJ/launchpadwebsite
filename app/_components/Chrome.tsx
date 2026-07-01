@@ -46,11 +46,9 @@ export function ArrowSmall({
   );
 }
 
-export function SectionLabel({ n, label }: { n: string; label: string }) {
+export function SectionLabel({label }: {label: string }) {
   return (
     <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.24em] text-ink-mute">
-      <span>{n}</span>
-      <span className="h-px w-8 bg-rule" aria-hidden />
       <span>{label}</span>
     </div>
   );

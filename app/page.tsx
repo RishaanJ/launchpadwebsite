@@ -231,7 +231,6 @@ function AboutSection() {
       <TiltedWeb className="absolute right-[-6%] top-[10%] hidden h-auto w-[950px] text-ink-mute lg:block xl:right-[-2%] xl:top-[8%] xl:w-[820px]"/>
 
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="01" label="About Launchpad" />
 
         <h2
           className="mt-8 max-w-[20ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
@@ -422,7 +421,6 @@ function ShipathonSection() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-10">
-          <SectionLabel n="01" label="Shipathon" />
           <div className="inline-flex items-center gap-3 rounded-full border border-rule bg-paper-2 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
             1st annual · Spring 2027 · Bay Area
@@ -523,7 +521,6 @@ function ChaptershipSection() {
   return (
     <section id="chapters" className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="02" label="Chaptership" />
 
         <h2
           className="mt-8 max-w-[18ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"
@@ -642,7 +639,7 @@ function PartnersSection() {
     <section id="partners" className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-10">
-          <SectionLabel n="02" label="Partners" />
+
           <a
             href="#sponsors"
             className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-ink"
@@ -771,7 +768,6 @@ function SponsorsSection() {
   return (
     <section id="sponsors" className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
-        <SectionLabel n="03" label="Sponsors" />
 
         <h2
           className="mt-8 max-w-[16ch] font-sans font-bold leading-[0.92] tracking-[-0.035em] text-ink"

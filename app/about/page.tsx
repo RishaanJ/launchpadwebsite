@@ -418,7 +418,7 @@ function Mission() {
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="01" label="Mission" />
+          <SectionLabel label="Mission" />
         </Reveal>
 
         <div className="mt-8 grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-[1.05fr_1fr] lg:items-start">
@@ -462,7 +462,7 @@ function Different() {
     <section className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="02" label="What makes us different" />
+          <SectionLabel label="What makes us different" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -531,7 +531,7 @@ function Framework() {
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="03" label="The Launchpad Framework" />
+          <SectionLabel label="The Launchpad Framework" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -583,7 +583,7 @@ function WhatWeDo() {
     <section className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="04" label="What we do" />
+          <SectionLabel label="What we do" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -755,7 +755,7 @@ function Vision() {
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="05" label="Vision" />
+          <SectionLabel  label="Vision" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -798,7 +798,7 @@ function Atlas() {
     <section className="relative border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="06" label="Launchpad Atlas" />
+          <SectionLabel label="Launchpad Atlas" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -876,7 +876,7 @@ function LongTerm() {
     <section className="relative border-t border-rule bg-paper-2">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="07" label="Long-term vision" />
+          <SectionLabel label="Long-term vision" />
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -910,7 +910,7 @@ function Join() {
     <section className="relative overflow-hidden border-t border-rule bg-paper">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <SectionLabel n="08" label="Join the movement" />
+          <SectionLabel label="Join the movement" />
         </Reveal>
 
         <Reveal delay={0.05}>
