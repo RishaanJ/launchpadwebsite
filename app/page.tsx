@@ -164,26 +164,26 @@ function Hero() {
             className="pt-0 text-center lg:text-center"
             title={
               <span className="lp-rise block w-full">
-                <Image
-                  src="/BigLogo2.png"
-                  alt="Launchpad"
-                  width={1326}
-                  height={300}
-                  priority
-                  sizes="(max-width: 1024px) 90vw, 70vw"
-                  className="mx-auto"
-                  style={{
-                    width: "auto",
-                    height: "auto",
-                    maxWidth: "100%",
-                    maxHeight: "clamp(64px, 14vw, 240px)",
-                  }}
-                />
+                  <Image
+                    src="/BigLogo2.png"
+                    alt="Launchpad"
+                    width={1326}
+                    height={300}
+                    priority
+                    sizes="(max-width: 1024px) 90vw, 70vw"
+                    className="mx-auto -translate-x-5" // moves left 0.75rem
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                      maxWidth: "100%",
+                      maxHeight: "clamp(64px, 14vw, 240px)",
+                    }}
+                  />
               </span>
             }
             subtitle={
               <span
-                className="lp-rise mt-5 block font-sans text-[clamp(1.5rem,3vw,2.75rem)] font-medium leading-[1.1] tracking-[-0.02em] text-ink"
+                className="lp-rise  block font-sans text-[clamp(1.5rem,3vw,2.75rem)] font-medium leading-[1.1] tracking-[-0.02em] text-ink"
                 style={{ animationDelay: "140ms", textWrap: "balance" }}
               >
                 The <span className="font-bold"><Highlighter action="underline" color="#FF0000">high school</Highlighter></span> product
@@ -193,21 +193,6 @@ function Hero() {
             headingClassName="font-sans font-bold leading-[0.86] tracking-[-0.045em]"
           />
 
-          <HeroDitheringDescription
-            className="lp-fade mx-auto max-w-[62ch] lg:mx-auto lg:max-w-[62ch] lg:text-center"
-            descriptionClassName="font-sans text-ink-soft text-lg sm:text-xl lg:text-[1.3rem] xl:text-[1.4rem] leading-[1.35] tracking-[-0.01em]"
-            description={
-              <>
-                <span className="block text-balance">
-                  Hackathons end at the demo. Pitch contests end at the deck.
-                </span>
-                <span className="mt-2 block text-balance font-medium text-ink">
-                  Launchpad ends when something you built has users.
-                </span>
-              </>
-            }
-            style={{ animationDelay: "300ms" }}
-          />
 
           <HeroDitheringActions
             className="lp-fade mt-2 flex-col items-center justify-center gap-x-6 gap-y-3 sm:flex-row sm:gap-x-8 lg:justify-center"
