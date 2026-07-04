@@ -241,14 +241,14 @@ function Cta() {
               title: "Mentor a teen builder.",
               body: "1 hour a month. Async-friendly. We pair you with a student in the pilot region.",
               cta: "Mentor",
-              href: "mailto:hello@launchpad.example?subject=Initiative%20mentor",
+              href: "mailto:hello@buildlaunchpad.org?subject=Initiative%20mentor",
             },
             {
               kicker: "For partners",
               title: "Bring it to your region.",
               body: "If you run a youth org or community space outside the Bay Area, we want to talk.",
               cta: "Partner with us",
-              href: "mailto:hello@launchpad.example?subject=Initiative%20partner",
+              href: "mailto:hello@buildlaunchpad.org?subject=Initiative%20partner",
             },
             {
               kicker: "For funders",

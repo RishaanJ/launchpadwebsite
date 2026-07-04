@@ -626,7 +626,7 @@ function ChaptershipSection() {
             <ArrowSmall />
           </a>
           <a
-            href="mailto:hello@launchpad.example"
+            href="mailto:hello@buildlaunchpad.org"
             className="group inline-flex items-center gap-2 font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
           >
             <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
@@ -857,11 +857,11 @@ function SponsorsSection() {
             {/* <ArrowSmall /> */}
           </a>
           <a
-            href="mailto:hello@launchpad.example"
+            href="mailto:hello@buildlaunchpad.org"
             className="group inline-flex items-center gap-2 font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
           >
             {/* <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
-              hello@launchpad.example
+              hello@buildlaunchpad.org
             </span> 
             <ArrowSmall className="text-ink-mute transition-colors group-hover:text-ink" />*/}
           </a>
