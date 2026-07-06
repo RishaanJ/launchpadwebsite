@@ -216,12 +216,12 @@ function Hero() {
               { /* <ArrowSmall /> */}
             </a>
             <a
-              href="https://forms.gle/Wju5ADiFWzUvnPKz7"
+              href="https://hcb.hackclub.com/donations/start/launchpad"
               target="_blank"
               className="group inline-flex items-center justify-center gap-2 font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
             >
               <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
-                Sign up for the Waitlist
+                Donate
               </span>
               <ArrowSmall className="text-ink-mute transition-colors group-hover:text-ink" />
             </a>

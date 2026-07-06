@@ -1,0 +1,23 @@
+Okay, quick question. Have you ever built something you were actually proud of? A hackathon project, an app you made over the summer, even just an idea you sketched out at 2am because you couldn't sleep until you did.
+
+Where is it now?
+
+If you're like most of us, it's sitting in a GitHub repo with one star. Yours.
+
+And that's not because it was bad. It's because after the demo, there was just... nothing. No next step. The hackathon ends, the judges go home, the school year keeps moving, and nobody ever tells you what you're supposed to do with the thing you made.
+
+Here's the part that bugs us. That next step? That's the fun part. Getting a real person to use your thing. Watching them get confused at the exact spot you were sure was obvious. Fixing it that same night. Checking the numbers the next morning to see if anyone came back. That's where you actually learn how products work. And right now, basically nobody teaches it to high schoolers.
+
+So we're going to.
+
+It's called Launchpad. It's a product development network for high school students, which is a fancy way of saying it's a group of students who build things, put them into the world, and then don't stop. We care about the whole journey. You build it, you ship it, you get it in front of real people, and then you make it better because of what they tell you.
+
+What that looks like in practice: chapters at schools, where builders meet every month, work on real products together, and hear from actual founders about how this stuff really works. And eventually, shipathons. Think hackathon, except the goal isn't to impress judges. It's to walk out with something live, that real people are using, and keep going from there.
+
+One more thing, because it matters to us. If you happen to live near founders and mentors and tech, you get all of this for free just by showing up. Most students don't. So everything we make, the guides, the templates, the whole playbook, we're eventually publishing for free, so someone can start this anywhere.
+
+We're starting with one chapter and a small group of students, which sounds small because it is. But honestly, that's how everything good starts.
+
+So if you've ever built something and wished even one stranger had used it, this is for you. And you don't have to be a coder. Designers, writers, people who are just good at convincing their friends of things. Building takes all of it.
+
+That's Launchpad. More soon.
