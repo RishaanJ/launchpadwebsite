@@ -130,25 +130,28 @@ export function Footer({ year }: { year: number }) {
               Get on the list
             </p>
             <a
-              href="mailto:hello@launchpad.example"
+              href="mailto:hello@buildlaunchpad.org"
               className="group inline-flex items-center gap-2 rounded-full border border-paper/25 bg-transparent px-5 py-3 font-sans text-[15px] font-medium text-paper transition-colors hover:border-paper hover:bg-paper hover:text-ink"
             >
-              hello@launchpad.example
+              hello@buildlaunchpad.org
               <ArrowSmall />
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-4 border-t border-paper/15 pt-8 font-mono text-[11px] uppercase tracking-[0.22em] text-paper/55 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} Launchpad · 501(c)(3) pending</p>
+          <div className="flex flex-col">
+          <p>© {year} Launchpad · Fiscally Sponsored by Hack Club</p>
+          <p>EIN: 81-2908499</p>
+          </div>
           <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <li>
-              <a className="transition-colors hover:text-paper" href="#instagram">
+              <a className="transition-colors hover:text-paper" href="https://www.instagram.com/buildlaunchpad/" target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
             </li>
             <li>
-              <a className="transition-colors hover:text-paper" href="#linkedin">
+              <a className="transition-colors hover:text-paper" href="https://www.linkedin.com/company/buildlaunchpad/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </li>
@@ -158,17 +161,9 @@ export function Footer({ year }: { year: number }) {
               </a>
             </li>
             <li>
-              <Link
-                className="transition-colors hover:text-paper"
-                href="/initiative"
-              >
-                Initiative
-              </Link>
-            </li>
-            <li>
               <a
                 className="transition-colors hover:text-paper"
-                href="mailto:hello@launchpad.example"
+                href="mailto:hello@buildlaunchpad.org"
               >
                 Contact
               </a>

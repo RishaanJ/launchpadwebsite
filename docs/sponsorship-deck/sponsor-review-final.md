@@ -1,0 +1,5 @@
+# Launchpad Founding Sponsor Deck — Final Review
+
+Slide 8 re-screenshotted and verified. Row 4 ("Logo on site, newsletter + event materials") now reads `Top placement` for Operator and `Marquee — first logo everywhere` for Title — a clear, commercially meaningful distinction that removes the last ambiguity between the $10K and $30K tiers. All 8 matrix rows are present, legible, and unclipped; the Rice University footer stat remains; no overflow anywhere on the slide. The change touches only this one cell and no other slide references the label, so there is no downstream effect to check. Across all three rounds of review, every P0, P1, and P2 fixable-by-editing issue has been resolved: the deck has a team slide, coherent budget math, a readable and differentiated benefits matrix, HCB transparency woven throughout, a correct cover, a clean close, and amber placeholders correctly marking the four data points that only the user can supply (team credentials, cohort enrollment, confirmed judge, venue shortlist). The deck is structurally and commercially sound for a founding-year ask at this stage of traction.
+
+VERDICT: SEND-READY
