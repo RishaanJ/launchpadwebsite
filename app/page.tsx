@@ -651,7 +651,9 @@ function PartnersSection() {
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-10">
 
           <a
-            href="#sponsors"
+            href="/sponsorship-deck.html"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-ink"
           >
             <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
@@ -742,7 +744,9 @@ function PartnersSection() {
                   Slot {String(slotIdx).padStart(2, "0")} · open
                 </span>
                 <a
-                  href="#sponsors"
+                  href="/sponsorship-deck.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-sans text-[16px] font-medium leading-snug text-ink-soft transition-colors group-hover:text-ink"
                 >
                   Your name here.
@@ -835,7 +839,9 @@ function SponsorsSection() {
 
               <div className="sm:pt-2">
                 <a
-                  href="#sponsor-contact"
+                  href="/sponsorship-deck.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
                 >
                   <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
@@ -850,11 +856,13 @@ function SponsorsSection() {
 
         <div className="mt-14 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
           <a
-            href="#sponsor-deck"
+            href="/sponsorship-deck.html"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 font-sans text-[15px] font-medium text-paper transition-transform duration-300 ease-out hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
           >
-            Sponsor Deck Coming Soon...
-            {/* <ArrowSmall /> */}
+            View sponsor deck
+            <ArrowSmall />
           </a>
           <a
             href="mailto:hello@buildlaunchpad.org"
@@ -870,4 +878,3 @@ function SponsorsSection() {
     </section>
   );
 }
-

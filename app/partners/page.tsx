@@ -153,7 +153,8 @@ function EmptyState() {
                 </div>
               </div>
               <Link
-                href="/#sponsors"
+                href="/sponsorship-deck.html"
+                target="_blank"
                 className="group inline-flex items-center gap-2 self-start font-sans text-[14px] font-medium text-ink-soft transition-colors hover:text-ink"
               >
                 <span className="border-b border-rule pb-px transition-colors group-hover:border-ink">
@@ -301,10 +302,11 @@ function CtaBlock() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
             <Link
-              href="/#sponsors"
+              href="/sponsorship-deck.html"
+              target="_blank"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 font-sans text-[15px] font-medium text-paper transition-transform duration-300 ease-out hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
             >
-              See the tiers
+              View sponsor deck
               <ArrowSmall />
             </Link>
             <a
