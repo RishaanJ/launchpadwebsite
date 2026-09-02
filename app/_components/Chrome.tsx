@@ -130,12 +130,21 @@ export function Footer({ year }: { year: number }) {
               Get on the list
             </p>
             <a
-              href="mailto:hello@buildlaunchpad.org"
+              href="mailto:team@buildlaunchpad.org"
               className="group inline-flex items-center gap-2 rounded-full border border-paper/25 bg-transparent px-5 py-3 font-sans text-[15px] font-medium text-paper transition-colors hover:border-paper hover:bg-paper hover:text-ink"
             >
-              hello@buildlaunchpad.org
+              team@buildlaunchpad.org
               <ArrowSmall />
             </a>
+            <p className="font-sans text-[14px] text-paper/55">
+              or{" "}
+              <a
+                href="/call"
+                className="border-b border-paper/30 pb-px text-paper/80 transition-colors hover:border-paper hover:text-paper"
+              >
+                book a call with Rishaan
+              </a>
+            </p>
           </div>
         </div>
 
@@ -163,7 +172,7 @@ export function Footer({ year }: { year: number }) {
             <li>
               <a
                 className="transition-colors hover:text-paper"
-                href="mailto:hello@buildlaunchpad.org"
+                href="mailto:team@buildlaunchpad.org"
               >
                 Contact
               </a>

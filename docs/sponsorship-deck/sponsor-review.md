@@ -107,7 +107,7 @@ Wait — re-reading the copy: the matrix shows quarterly impact emails for Frien
 The "In 2030" callout is too aggressive for current traction level (see P2 #18). The stat row is clean and works. The body copy is the strongest close argument in the deck. The "founding partner is a title nobody can buy later" line is genuinely good.
 
 **Slide 14 — Transparency & Close**
-The email address (`hello@buildlaunchpad.org`) should appear earlier in the deck and should be on every slide footer, not just the final CTA. "One conversation closes this" is a solid closer but it's preceded by a paragraph of logistics. Consider: lead with the CTA ("Claim a founding seat. One conversation.") and put the fine print below. Currently the fine print buries the ask.
+The email address (`team@buildlaunchpad.org`) should appear earlier in the deck and should be on every slide footer, not just the final CTA. "One conversation closes this" is a solid closer but it's preceded by a paragraph of logistics. Consider: lead with the CTA ("Claim a founding seat. One conversation.") and put the fine print below. Currently the fine print buries the ask.
 
 The 7-day seat hold should be stated earlier (e.g., slide 13), not only in the close. It creates urgency but the reader only sees it at the end of a 14-slide deck.
 
